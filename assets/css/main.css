@@ -85,14 +85,14 @@
 	body {
 		height: 100%;
 		background-color: #ffffff;
-		background-image: url("../../images/bg.png");
-		background-image: url("../../images/bg.png");
-		background-image: url("../../images/bg.png");
-		background-image: url("../../images/bg.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		background-attachment: fixed;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(84, 110, 122, 1.0) 5%, rgba(144, 164, 174, 1));
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(84, 110, 122, 1.0) 5%, rgba(144, 164, 174, 1));
+		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(84, 110, 122, 1.0) 5%, rgba(144, 164, 174, 1));
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(84, 110, 122, 1.0) 5%, rgba(144, 164, 174, 1));
+		background-repeat: repeat, no-repeat;
+		background-size: 100px 100px, cover;
+		background-position: top left, center center;
+		background-attachment: fixed, fixed;
 	}
 
 		body:after {
@@ -105,7 +105,14 @@
 			height: inherit;
 			opacity: 0;
 			z-index: 1;
-			background-color: #607D8B
+			background-color: #ffffff;
+			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(84, 110, 122, 1.0) 5%, rgba(144, 164, 174, 1));
+			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(84, 110, 122, 1.0) 5%, rgba(144, 164, 174, 1));
+			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(84, 110, 122, 1.0) 5%, rgba(144, 164, 174, 1));
+			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(84, 110, 122, 1.0) 5%, rgba(144, 164, 174, 1));
+			background-repeat: repeat, no-repeat;
+			background-size: 100px 100px, cover;
+			background-position: top left, center center;
 			-moz-transition: opacity 1.75s ease-out;
 			-webkit-transition: opacity 1.75s ease-out;
 			-ms-transition: opacity 1.75s ease-out;
@@ -125,7 +132,7 @@
 		font-weight: 300;
 		line-height: 2;
 		letter-spacing: 0.2em;
-		text-transform: uppercase;
+		/* text-transform: uppercase; [this looks stupid] */
 	}
 
 		@media screen and (max-width: 1680px) {
