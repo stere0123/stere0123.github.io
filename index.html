@@ -8,14 +8,11 @@
 	<head>
 		<title>stere0123</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-loading">
+	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -23,18 +20,16 @@
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span class="avatar"><img src="images/avatar-122px.png" alt="" /></span>
+							<span class="avatar"><img src="images/avatar.png" style="max-width:122px;" alt="" /></span>
 							<h1>stere0123</h1>
 							<p>some guy on the internet</p>
 						</header>
-
 						<footer>
 							<ul class="icons">
-								<li><a href="https://youtube.com/user/stere0123" class="icon fa-youtube-play">YouTube</a></li>
-								<li><a href="https://twitter.com/stere0123" class="icon fa-twitter"><span class="label">Twitter</a></li>
-								<li><a href="https://steamcommunity.com/id/stere0123" class="icon fa-steam"><span class="label">Steam</a></li>
-								<li><a href="https://twitch.tv/stere0123" class="icon fa-twitch"><span class="label">Twitch</a></li>
-								<li><a href="https://plays.tv/u/stere0123" class="icon fa-play-circle"><span class="label">Plays.tv</a></li>
+								<li><a href="https://youtube.com/user/stere0123" class="icon brands fa-youtube">YouTube</a></li>
+								<li><a href="https://twitter.com/stere0123" class="icon brands fa-twitter">Twitter</a></li>
+								<li><a href="https://steamcommunity.com/id/stere0123" class="icon brands fa-steam">Steam</a></li>
+								<li><a href="https://twitch.tv/stere0123" class="icon brands fa-twitch">Twitch</a></li>
 							</ul>
 						</footer>
 					</section>
@@ -42,17 +37,16 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; stere0123</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; stere0123</li><li>Design: <a href="https://html5up.net/">HTML5 UP</a></li>
 						</ul>
 					</footer>
 
 			</div>
 
 		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
 			<script>
 				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
